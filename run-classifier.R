@@ -8,12 +8,6 @@
 # Author: Trent Henderson, 4 March 2021
 #--------------------------------------
 
-library(tidyverse)
-library(scales)
-library(stan)
-library(loo)
-library(bayesplot)
-
 #--------------------- Load in feature data & split ----------------
 
 tmp <- read_csv("/Users/trenthenderson/Documents/git/feature-classifier/catch22_results.csv")
