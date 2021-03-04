@@ -37,7 +37,7 @@ stan_data <- list(N = nrow(train),
 
 # Run model
 
-m1 <- stan(model_code = "stan/classifier-model.stan", data = stan_data, chains = 3, iter = 2000)
+m1 <- stan(model_code = "stan/classifier-model.stan", data = stan_data, chains = 3, iter = 2000, seed = 123)
 
 #--------------------- Compute outputs & data vis -----------------
 
