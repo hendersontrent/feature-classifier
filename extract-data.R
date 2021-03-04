@@ -8,6 +8,9 @@
 # Author: Trent Henderson, 4 March 2021
 #--------------------------------------
 
+library(nousutils)
+library(DBI)
+
 #--------------------------- Pull data -----------------------------
 
 sql <- "

@@ -9,13 +9,11 @@
 
 library(tidyverse)
 library(scales)
-library(nousutils)
-library(DBI)
 library(stan)
 library(loo)
 library(bayesplot)
-
-dawn <- connect_dawn()
+library(catch22)
+library(data.table)
 
 # Create an output and data folder if none exists:
 
