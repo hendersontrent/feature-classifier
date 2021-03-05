@@ -9,11 +9,13 @@
 
 library(tidyverse)
 library(scales)
-library(stan)
 library(loo)
 library(bayesplot)
 library(catch22)
 library(data.table)
+library(caTools)
+library(brms)
+library(Cairo)
 
 # Create an output and data folder if none exists:
 
