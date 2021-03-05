@@ -17,7 +17,8 @@ tmp <- outs %>%
   summarise(values = mean(values)) %>%
   ungroup() %>%
   spread(key = names, value = values) %>%
-  drop_na()
+  drop_na() %>%
+  mutate(ra_name_2016 = factor(ra_name_2016, levels = c("Not Major Cities", "Major Cities of Australia")))
 
 # Train-test split
 
